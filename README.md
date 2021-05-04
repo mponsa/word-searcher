@@ -10,9 +10,10 @@ Searchs for these words `['How','are','you','doing','?']` inside the text files 
 
 ## How to run.
 
-Just clone these repo, and make sure you have Maven & Java >11 installed.
+Just clone this repo, and make sure you have Maven & Java >11 installed.
 
 ````
+git clone https://github.com/mponsa/word-searcher.git
 mvn build
 mvn package
 java -jar target/word-searcher-1.0-SNAPSHOT.jar <directory-to-look-into>

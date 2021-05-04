@@ -26,6 +26,6 @@ mvn test
 
 ### Architecture
 
-This application was made following Clean Architecture principles, in which business logic is separated from business layer. You can find core logic inside core package, which is divided into Entities & Usecases.
+This application was made following Clean Architecture principles, in which business logic is separated from presentation layer. You can find core logic inside core package, which is divided into Entities & Usecases.
 
 Entities represent models inside our domain, and usecases create and uses those entities to serve a single purpose.

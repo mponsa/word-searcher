@@ -10,7 +10,7 @@ Searchs for these words `['How','are','you','doing','?']` inside the text files 
 
 ## How to run.
 
-Just clone these repo, and make sure you have Maven installed.
+Just clone these repo, and make sure you have Maven & Java >11 installed.
 
 ````
 mvn build

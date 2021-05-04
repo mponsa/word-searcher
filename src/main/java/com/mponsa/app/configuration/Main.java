@@ -22,6 +22,7 @@ public class Main {
     private static SearchWordsInFiles searcher;
 
     private static void setUpEnvironment(){
+        System.out.println("Setting up environment..");
         filter = new FileFilter(".txt");
         converter = new ConvertJavaFilesIntoSearchableFilesImpl();
         finder = new GetFilesFromDirectoryImpl(filter,converter);
@@ -38,9 +39,9 @@ public class Main {
             throw new IllegalArgumentException("No directory given to index.");
         }
 
-        System.out.println("Welcolme to file searcher, enter query after searcher> or type :quit to exit");
-
         setUpEnvironment();
+
+        System.out.printf("Searching for .txt files in %s ... \n", args[0]);
 
         List<FileSearcher> filesToSearch = new ArrayList<>();
 
@@ -50,6 +51,8 @@ public class Main {
             System.out.println(exp.getMessage());
             exit();
         }
+
+        System.out.println("Welcolme to file searcher, enter query after searcher> or type :quit to exit");
 
         try (Scanner keyboard = new Scanner(System.in)) {
             while (true) {
